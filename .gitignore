@@ -2,6 +2,11 @@
 *.bk
 *.env
 .cache
+.env
 __pycache__/
 contributors.txt
+data/snapshots.json
+node_modules/
 temp_repo_clone
+widgets/*.html
+widgets/*.svg
