@@ -1,5 +1,7 @@
-node_modules/
-data/snapshots.json
-widgets/*.svg
-widgets/*.html
-.env
+*.bak
+*.bk
+*.env
+.cache
+__pycache__/
+contributors.txt
+temp_repo_clone
