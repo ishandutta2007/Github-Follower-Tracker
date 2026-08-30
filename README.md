@@ -1,8 +1,12 @@
+<div align="center">
+
+![GitHub Follower Tracker Banner](./assets/banner.svg)
+
 # GitHub Follower Tracker
 
 Track your GitHub follower growth with **daily snapshots**, an **interactive dashboard**, and **embeddable widgets**.
 
-![Follower Growth](./widgets/follower-growth.svg)
+</div>
 
 ---
 
