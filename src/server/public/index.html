@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Follower Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <link rel="stylesheet" href="/css/dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>📈 GitHub Follower Tracker</h1>
+      <div class="range-selector">
+        <button class="range-btn active" data-days="7">7 Days</button>
+        <button class="range-btn" data-days="30">30 Days</button>
+        <button class="range-btn" data-days="all">All Time</button>
+      </div>
+    </header>
+
+    <!-- Stats Cards -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Current Followers</span>
+        <span class="stat-value" id="current-count">&mdash;</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Period Change</span>
+        <span class="stat-value" id="period-change">&mdash;</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Gained</span>
+        <span class="stat-value gained" id="period-gained">&mdash;</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Lost</span>
+        <span class="stat-value lost" id="period-lost">&mdash;</span>
+      </div>
+    </section>
+
+    <!-- Growth Chart -->
+    <section class="chart-container">
+      <canvas id="follower-chart"></canvas>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="activity">
+      <div class="activity-panel">
+        <h3>✅ Recently Gained</h3>
+        <ul id="gained-list"></ul>
+      </div>
+      <div class="activity-panel">
+        <h3>❌ Recently Lost</h3>
+        <ul id="lost-list"></ul>
+      </div>
+    </section>
+
+    <!-- Daily Log Table -->
+    <section class="daily-table">
+      <h3>📋 Daily Log</h3>
+      <table id="daily-log">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Followers</th>
+            <th>Change</th>
+            <th>Gained</th>
+            <th>Lost</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

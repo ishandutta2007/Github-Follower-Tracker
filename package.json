@@ -1,0 +1,29 @@
+{
+  "name": "github-follower-tracker",
+  "version": "1.0.0",
+  "description": "Track GitHub follower growth with daily snapshots, interactive dashboards, and embeddable widgets",
+  "main": "bin/tracker.js",
+  "bin": {
+    "gh-tracker": "bin/tracker.js"
+  },
+  "scripts": {
+    "snapshot": "node bin/tracker.js snapshot",
+    "dashboard": "node bin/tracker.js dashboard",
+    "widget": "node bin/tracker.js widget",
+    "history": "node bin/tracker.js history"
+  },
+  "keywords": [
+    "github",
+    "followers",
+    "tracker",
+    "dashboard",
+    "widget"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "express": "^4.21.0",
+    "open": "^10.1.0"
+  }
+}
